@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MRS Bros Restaurant</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:#0a0a0a;
+    color:#f2f2f2;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#7a0000,#ff0000);
+    text-align:center;
+    padding:35px 15px;
+}
+header h1{
+    margin:0;
+    font-size:44px;
+    letter-spacing:3px;
+}
+header p{
+    margin-top:10px;
+    font-size:18px;
+    opacity:0.95;
+}
+
+/* NAV */
+nav{
+    background:#000;
+    padding:14px;
+    text-align:center;
+    border-bottom:2px solid red;
+}
+nav a{
+    color:red;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+nav a:hover{color:white;}
+
+/* HERO */
+.hero{
+    padding:80px 20px;
+    text-align:center;
+    background:#111;
+}
+.hero h2{
+    color:red;
+    font-size:36px;
+}
+.hero p{
+    max-width:820px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* SECTIONS */
+section{
+    padding:70px 20px;
+    text-align:center;
+}
+section h2{
+    color:red;
+    font-size:36px;
+    margin-bottom:20px;
+    letter-spacing:2px;
+}
+
+/* PREMIUM CATEGORY TITLES */
+.category-title{
+    margin-top:70px;
+}
+.category-title span{
+    display:inline-block;
+    font-size:28px;
+    color:#ff2a2a;
+    letter-spacing:2px;
+    position:relative;
+}
+.category-title span::after{
+    content:"";
+    width:60%;
+    height:2px;
+    background:red;
+    display:block;
+    margin:10px auto 0;
+}
+
+/* SUB CATEGORY */
+.sub-title{
+    color:#ff6666;
+    font-size:22px;
+    margin-top:35px;
+    letter-spacing:1px;
+}
+
+/* MENU */
+.menu-items{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+.item{
+    background:#151515;
+    border:1px solid #333;
+    width:260px;
+    margin:15px;
+    padding:24px;
+    border-radius:10px;
+    transition:0.3s;
+}
+.item:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 18px rgba(255,0,0,0.6);
+}
+.item h5{
+    color:red;
+    font-size:17px;
+    margin-bottom:8px;
+}
+.item p{
+    font-size:14px;
+    opacity:0.9;
+}
+
+/* ABOUT */
+.about{
+    background:#0f0f0f;
+    border-top:2px solid red;
+    border-bottom:2px solid red;
+}
+.about p{
+    max-width:880px;
+    margin:auto;
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    padding:20px;
+    text-align:center;
+    font-size:14px;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>MRS Bros Restaurant</h1>
+    <p>Authentic Pakistani Cuisine • Premium Dining Experience</p>
+</header>
+
+<nav>
+    <a href="#">HOME</a>
+    <a href="#">MENU</a>
+    <a href="#">ABOUT</a>
+    <a href="#">CONTACT</a>
+</nav>
+
+<div class="hero">
+    <h2>Welcome to MRS Bros Restaurant</h2>
+    <p>
+        Experience the true essence of Pakistani flavours with our  
+        premium quality food, elegant environment and unforgettable taste.
+    </p>
+</div>
+
+<section>
+    <h2>OUR MENU</h2>
+
+    <!-- DESI FOOD -->
+    <div class="category-title">
+        <span>DESI FOOD</span>
+    </div>
+
+    <div class="sub-title">Karahi Selection</div>
+    <div class="menu-items">
+        <div class="item"><h5>Chicken Karahi</h5><p>Fresh tomato & desi masala</p></div>
+        <div class="item"><h5>Mutton Karahi</h5><p>Traditional slow cooked</p></div>
+    </div>
+
+    <div class="sub-title">Handi Special</div>
+    <div class="menu-items">
+        <div class="item"><h5>Chicken Handi</h5><p>Rich creamy gravy</p></div>
+        <div class="item"><h5>Mutton Handi</h5><p>Royal desi flavour</p></div>
+    </div>
+
+    <div class="sub-title">Rice Dishes</div>
+    <div class="menu-items">
+        <div class="item"><h5>Chicken Biryani</h5><p>Spicy aromatic basmati</p></div>
+        <div class="item"><h5>Beef Pulao</h5><p>Mild & fragrant rice</p></div>
+    </div>
+
+    <!-- BBQ -->
+    <div class="category-title">
+        <span>BBQ SPECIALS</span>
+    </div>
+
+    <div class="menu-items">
+        <div class="item"><h5>Chicken Tikka</h5><p>Smoky & juicy</p></div>
+        <div class="item"><h5>Beef Boti</h5><p>Soft & spicy</p></div>
+        <div class="item"><h5>Malai Boti</h5><p>Creamy BBQ delight</p></div>
+        <div class="item"><h5>Seekh Kabab</h5><p>Classic desi kabab</p></div>
+    </div>
+
+    <!-- FAST FOOD -->
+    <div class="category-title">
+        <span>FAST FOOD</span>
+    </div>
+
+    <div class="menu-items">
+        <div class="item"><h5>Zinger Burger</h5><p>Crispy & spicy</p></div>
+        <div class="item"><h5>Beef Burger</h5><p>Juicy grilled beef</p></div>
+        <div class="item"><h5>BBQ Pizza</h5><p>Smoky & cheesy</p></div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="category-title">
+        <span>DESSERTS</span>
+    </div>
+
+    <div class="menu-items">
+        <div class="item"><h5>Gulab Jamun</h5><p>Soft & juicy sweetness</p></div>
+        <div class="item"><h5>Kheer</h5><p>Traditional delight</p></div>
+        <div class="item"><h5>Chocolate Lava Cake</h5><p>Hot molten chocolate</p></div>
+    </div>
+</section>
+
+<section class="about">
+    <h2>ABOUT MRS BROS</h2>
+    <p>
+        MRS Bros Restaurant is committed to delivering a premium dining experience.  
+        We focus on quality ingredients, authentic taste and exceptional service.
+    </p>
+</section>
+
+<footer>
+    © 2026 MRS Bros Restaurant | All Rights Reserved
+</footer>
+
+</body>
+</html>
